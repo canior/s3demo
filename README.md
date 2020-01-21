@@ -19,7 +19,7 @@ JDK: 1.8+
 Aws S3: Amazon S3 Bucket is required
 
 ```
-## S3 Configuration
+## Configuration & Start Service
 
 In order to run this project, you will need to configure an Amazon S3 Bucket.
  
