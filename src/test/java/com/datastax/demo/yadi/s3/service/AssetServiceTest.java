@@ -22,7 +22,6 @@ import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.util.AssertionErrors.assertFalse;
-import static org.springframework.test.util.AssertionErrors.assertTrue;
 import static org.springframework.test.util.AssertionErrors.assertNotNull;
 
 @RunWith(SpringRunner.class)

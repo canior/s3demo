@@ -14,10 +14,6 @@ public class Asset {
     @Enumerated(EnumType.STRING)
     private AssetStatus status;
 
-    private String uploadUrl;
-
-    private String downloadUrl;
-
     public boolean isUploaded() {
         return AssetStatus.UPLOADED.equals(this.status);
     }

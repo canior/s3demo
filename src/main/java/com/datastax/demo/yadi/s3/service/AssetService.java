@@ -4,8 +4,6 @@ import com.datastax.demo.yadi.s3.dto.DownloadResponse;
 import com.datastax.demo.yadi.s3.dto.UploadCompletedResponse;
 import com.datastax.demo.yadi.s3.dto.UploadPreparationResponse;
 
-import java.net.URISyntaxException;
-
 public interface AssetService {
     UploadPreparationResponse prepareUpload();
 

@@ -39,6 +39,7 @@ public class AssetServiceImpl implements AssetService {
     public UploadCompletedResponse completeUpload(Long assetId) {
         Asset asset = this.assetRepository.findById(assetId).orElseThrow(IllegalArgumentException::new);
         asset.setStatus(AssetStatus.UPLOADED);
+        this.assetRepository.save(asset);
         return new UploadCompletedResponse(AssetStatus.UPLOADED.toString());
     }
 
