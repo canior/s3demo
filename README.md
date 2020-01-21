@@ -121,7 +121,7 @@ Mockito is used to mock S3 service
 
 ## Authors
 
-* **Yadi Tang** - *Initial work* - [PurpleBooth](https://github.com/canior)
+* **Yadi Tang** - *Initial work* - (https://github.com/canior)
 
 ## License
 
