@@ -50,7 +50,7 @@ s3.apiKey=<s3-api-key>
 s3.apiSecret=<s3-api-secret>
 s3.bucketName=<s3-bucket-name>
 s3.region=<s3-region>
-s3.urlExpirySeconds=10000 #default upload or download url expiration seconds
+s3.urlExpirySeconds=60 #default upload or download url expiration seconds
 ```
 
 3. Start Service
