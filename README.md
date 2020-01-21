@@ -53,13 +53,14 @@ s3.region=<s3-region>
 s3.urlExpirySeconds=10000 #default upload or download url expiration seconds
 ```
 
-### Start Service
-
-OS & Windows
+3. Start Service
 
 ```
 ./mvnw spring-boot:run
 ```
+
+## API Description
+
 by default the base url of api service is http://localhost:8080
 
 ```
