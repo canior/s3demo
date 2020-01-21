@@ -2,14 +2,14 @@
 
 S3 asset uploader API for asset uploading
 
-1. client gets pre signed url of S3 for uploading
-2. client uses pre signed url to upload any assets to s3 bucket
-3. client completes the upload
-4. client gets the download url from s3
+1. client gets pre signed url of s3 for uploading from uploader service
+2. client uses pre signed url to upload any assets to s3 bucket directly
+3. client notifies the uploader service that the asset has been completed
+4. client gets the s3 download url from the uploader service
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+In order to run this project, you will need to configure an Amazon S3 Bucket.
 
 ### Prerequisites
 
@@ -20,10 +20,8 @@ Aws S3: Amazon S3 Bucket is required
 
 ```
 ## Configuration & Start Service
-
-In order to run this project, you will need to configure an Amazon S3 Bucket.
  
-1. Create an IAM user with the following policy in order to be able to access your bucket.
+1. In AWS, create an IAM user with the following policy in order to be able to access your bucket.
 
 ```json
 {
@@ -44,7 +42,7 @@ In order to run this project, you will need to configure an Amazon S3 Bucket.
 }
 ```
 
-2. Update src/main/resources/application.properties
+2. Update src/main/resources/application.properties. Please Note the properties file has to be valid in order to run the service.
 ```
 s3.apiKey=<s3-api-key>
 s3.apiSecret=<s3-api-secret>
